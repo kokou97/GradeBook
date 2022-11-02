@@ -6,7 +6,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            if (args.Length == 0)
+            if (args.Length < 1)
             {
                 Console.WriteLine("Hello, World!");
             }
