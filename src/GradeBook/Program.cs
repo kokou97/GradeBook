@@ -6,9 +6,13 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            double[] numbers = new[] { 12.7, 10.3, 6.11 };
-            numbers[0] += 5;
-            Console.WriteLine(numbers.Sum());
+            var numbers = new[] { 12.7, 10.3, 6.11 };
+            var result = 0.0;
+            foreach (double number in numbers)
+            {
+                result += number;
+            }
+            Console.WriteLine(result);
             if (args.Length < 1)
             {
                 Console.WriteLine("Hello, World!");
