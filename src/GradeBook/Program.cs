@@ -16,10 +16,13 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 result1 += number;
             }
             var result2 = 0.0;
+            int lenGrades = 0;
             foreach (var grade in grades)
             {
                 result2 += grade;
+                lenGrades += 1;
             }
+            result2 /= lenGrades;
             Console.WriteLine(result1);
             Console.WriteLine(result2 + "\n");
             Console.WriteLine(grades.Sum());
