@@ -6,10 +6,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            double x = 34.1;
-            var y = 10.3;
-            var z = x + y;
-            Console.WriteLine((z));
+            double[] numbers = new double[3];
+            numbers[0] = 12.7;
             if (args.Length < 1)
             {
                 Console.WriteLine("Hello, World!");
