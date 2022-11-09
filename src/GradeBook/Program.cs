@@ -22,6 +22,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 result2 += grade;
                 lenGrades += 1;
             }
+            Console.WriteLine(result2 / grades.Count);
             result2 /= lenGrades;
             Console.WriteLine(result1);
             Console.WriteLine(result2 + "\n");
