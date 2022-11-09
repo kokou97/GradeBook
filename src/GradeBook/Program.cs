@@ -22,7 +22,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 result2 += grade;
                 lenGrades += 1;
             }
-            Console.WriteLine($"The average grade is : {result2 / grades.Count}");
+            Console.WriteLine($"The average grade is : {(result2 / grades.Count):N1}");
             result2 /= lenGrades;
             Console.WriteLine($"The sum of numbers is : {result1}");
             Console.WriteLine($"The average grade is : {result2}" + "\n");
