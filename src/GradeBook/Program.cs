@@ -6,7 +6,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            double[] numbers = new double[3];
+            var numbers = new double[3];
             numbers[0] = 12.7;
             if (args.Length < 1)
             {
