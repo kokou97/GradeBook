@@ -8,6 +8,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {
             var numbers = new double[3];
             numbers[0] = 12.7;
+            numbers[1] = 10.3;
+            numbers[2] = 6.11;
             if (args.Length < 1)
             {
                 Console.WriteLine("Hello, World!");
