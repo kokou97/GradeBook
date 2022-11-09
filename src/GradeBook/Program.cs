@@ -10,6 +10,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             numbers[0] = 12.7;
             numbers[1] = 10.3;
             numbers[2] = 6.11;
+            Console.WriteLine(numbers.Sum());
             if (args.Length < 1)
             {
                 Console.WriteLine("Hello, World!");
