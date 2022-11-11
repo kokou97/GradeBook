@@ -26,10 +26,7 @@ namespace GradeBook // Note: actual namespace depends on the project name.
             Console.WriteLine($"This is the double minValue: {highGrade}");
             foreach (var number in numbers)
             {
-                if (number > highGrade)
-                {
-                    highGrade = number;
-                }
+                highGrade = Math.Max(number, highGrade);
                 result1 += number;
             }
             Console.WriteLine($"This is the highGrade: {highGrade}");
