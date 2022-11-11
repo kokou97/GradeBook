@@ -23,13 +23,16 @@ namespace GradeBook // Note: actual namespace depends on the project name.
             grades.Add(56.1);
             var result1 = 0.0;
             var highGrade = double.MinValue;
+            var lowGrade =  double.MaxValue;
             Console.WriteLine($"This is the double minValue: {highGrade}");
             foreach (var number in numbers)
             {
+                lowGrade = Math.Min(number, lowGrade);
                 highGrade = Math.Max(number, highGrade);
                 result1 += number;
             }
             Console.WriteLine($"This is the highGrade: {highGrade}");
+            Console.WriteLine($"This is the lowGrade: {lowGrade}");
             var result2 = 0.0;
             int lenGrades = 0;
             foreach (var grade in grades)
