@@ -3,10 +3,16 @@ using System.Collections.Generic;
 
 namespace GradeBook // Note: actual namespace depends on the project name.
 {
+
     class Program
     {
         static void Main(string[] args)
         {
+
+            //Static methods cannot be instanciated
+            Book book = new Book("JM's GradeBookbbbbc");
+            book.AddGrade(89.1);
+            // book.grades.Add(88.9);
             var numbers = new[] { 12.7, 10.3, 6.11 };
             var grades = new List<double>() { 12.7, 10.3, 6.11 };
             grades.Add(56.1);
