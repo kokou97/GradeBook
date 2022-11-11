@@ -15,7 +15,7 @@ namespace GradeBook // Note: actual namespace depends on the project name.
             book.AddGrade(90.1);
             book.AddGrade(77.1);
 
-
+            book.ShowStatistics();
 
             // book.grades.Add(88.9);
             var numbers = new[] { 12.7, 10.3, 6.11 };
@@ -23,7 +23,7 @@ namespace GradeBook // Note: actual namespace depends on the project name.
             grades.Add(56.1);
             var result1 = 0.0;
             var highGrade = double.MinValue;
-            var lowGrade =  double.MaxValue;
+            var lowGrade = double.MaxValue;
             Console.WriteLine($"This is the double minValue: {highGrade}");
             foreach (var number in numbers)
             {
