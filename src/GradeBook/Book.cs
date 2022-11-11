@@ -30,7 +30,7 @@ namespace GradeBook
 
             result /= grades.Count;
 
-            Console.WriteLine($"Here start {this.name}'s book statistics : \n \n");
+            Console.WriteLine($"Here start {this.name}'s book statistics : \n");
             Console.WriteLine($"This is the highGrade: {highGrade}");
             Console.WriteLine($"This is the lowGrade: {lowGrade}");
             Console.WriteLine($"The average grade is : {result:N1}" + "\n");
