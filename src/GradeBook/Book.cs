@@ -5,7 +5,6 @@ namespace GradeBook
         //List<double> grades = new List<double>();
         private List<double> grades;
         private string name;
-
         public Book(String name)
         {
             this.grades = new List<double>();
