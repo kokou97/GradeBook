@@ -8,7 +8,7 @@ namespace GradeBook
         public Book(String name)
         {
             this.grades = new List<double>();
-            this.name = name;
+            this.Name = name;
         }
         public void AddGrade(double grade)
         {
@@ -20,11 +20,11 @@ namespace GradeBook
 
             var result = GetStatistics();
 
-            Console.WriteLine($"Here start {this.name}'s book statistics : \n");
+            Console.WriteLine($"Here start {this.Name}'s book statistics : \n");
             Console.WriteLine($"This is the highGrade: {result.High}");
             Console.WriteLine($"This is the lowGrade: {result.Low}");
             Console.WriteLine($"The average grade is : {result.Average:N1}" + "\n");
-            Console.WriteLine($"Here end {this.name}'s book statistics : \n \n");
+            Console.WriteLine($"Here end {this.Name}'s book statistics : \n \n");
 
         }
 
