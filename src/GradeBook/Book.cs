@@ -1,6 +1,6 @@
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
         //List<double> grades = new List<double>();
         private List<double> grades;
@@ -17,6 +17,19 @@ namespace GradeBook
 
         public void ShowStatistics()
         {
+
+            var result = GetStatistics();
+
+            Console.WriteLine($"Here start {this.name}'s book statistics : \n");
+            Console.WriteLine($"This is the highGrade: {result.High}");
+            Console.WriteLine($"This is the lowGrade: {result.Low}");
+            Console.WriteLine($"The average grade is : {result.Average:N1}" + "\n");
+            Console.WriteLine($"Here end {this.name}'s book statistics : \n \n");
+
+        }
+
+        public Statistics GetStatistics()
+        {
             var highGrade = double.MinValue;
             var lowGrade = double.MaxValue;
             var result = 0.0;
@@ -28,12 +41,9 @@ namespace GradeBook
             }
 
             result /= grades.Count;
+            return new Statistics(lowGrade, highGrade, result);
 
-            Console.WriteLine($"Here start {this.name}'s book statistics : \n");
-            Console.WriteLine($"This is the highGrade: {highGrade}");
-            Console.WriteLine($"This is the lowGrade: {lowGrade}");
-            Console.WriteLine($"The average grade is : {result:N1}" + "\n");
-            Console.WriteLine($"Here end {this.name}'s book statistics : \n \n");
         }
     }
+
 }
