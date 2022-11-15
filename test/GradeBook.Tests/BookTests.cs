@@ -34,8 +34,8 @@ public class BookTests
         var actualResult = book.GetStatistics();
 
         //assert
-        Assert.Equal(expectedResult.Low, actualResult.Low);
-        Assert.Equal(expectedResult.High, actualResult.High);
+        Assert.Equal(expectedResult.Low, actualResult.Low, 1);
+        Assert.Equal(expectedResult.High, actualResult.High, 1);
         Assert.Equal(expectedResult.Average, actualResult.Average, 1);
     }
 }
