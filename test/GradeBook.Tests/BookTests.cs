@@ -21,7 +21,7 @@ public class BookTests
     }
 
     [Fact]
-    public void Test2()
+    public void BookCalculatesAnAverageGrade()
     {
         //arrange
         var book = new Book("");
