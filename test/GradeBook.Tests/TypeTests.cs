@@ -26,6 +26,22 @@ public class TypeTests
     }
 
     [Fact]
+    public void StringsBehaveLikeValueTypes()
+    {
+        string name = "Scott";
+        var Uppername = MakeUppercase(name);
+
+
+        Assert.Equal("Scott", name);
+        Assert.Equal("SCOTT", Uppername);
+    }
+
+    private string MakeUppercase(string input)
+    {
+        return input.ToUpper();
+    }
+
+    [Fact]
     public void GetBookReturnsDifferentObjects()
     {
         //arrange
