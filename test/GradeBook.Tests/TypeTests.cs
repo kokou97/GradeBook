@@ -15,9 +15,9 @@ public class TypeTests
         Assert.Equal(42, x);
     }
 
-    private void SetInt(ref int x)
+    private void SetInt(ref int z)
     {
-        x = 42;
+        z = 42;
     }
 
     private int GetInt()
