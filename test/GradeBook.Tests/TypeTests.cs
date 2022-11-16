@@ -40,6 +40,18 @@ public class TypeTests
     }
 
     [Fact]
+    public void CSharpCanPassByRef_With_Out()
+    {
+        var book1 = GetBook("Book 1");
+        GetBookSetNameOut(out book1, "New Name");
+        Assert.Equal("New Name", book1.Name);
+    }
+    void GetBookSetNameOut(out Book book, string name)
+    {
+        book = new Book(name);
+    }
+
+    [Fact]
     public void CSharpIsPassedByValue()
     {
         var book1 = GetBook("Book 1");
