@@ -24,7 +24,7 @@ namespace GradeBook // Note: actual namespace depends on the project name.
             var result1 = 0.0;
             var highGrade = double.MinValue;
             var lowGrade = double.MaxValue;
-            Console.WriteLine($"This is the double minValue: {highGrade}");
+            Console.WriteLine($"This is the minimum value which is of type double: {highGrade}");
             foreach (var number in numbers)
             {
                 lowGrade = Math.Min(number, lowGrade);
